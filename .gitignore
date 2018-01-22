@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# generated tickets csv
+tickets_*.csv

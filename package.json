@@ -1,0 +1,26 @@
+{
+  "name": "connect2flyaway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "bunyan-format": "^0.2.1",
+    "command-line-args": "^5.0.1",
+    "command-line-usage": "^4.1.0",
+    "config": "^1.29.2",
+    "csv": "^2.0.0",
+    "js-yaml": "^3.10.0",
+    "moment": "^2.20.1",
+    "pretty-ms": "^3.1.0",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sof_duration": "node --trace-warnings --experimental-modules script.mjs --from SOF --order duration --departure 30 < ./airports.csv 2>/dev/stdout > ./tickets_duration_`date --iso`.csv",
+    "sof_price": "node --trace-warnings --experimental-modules script.mjs --from SOF --order price --departure 30 < ./airports.csv 2>/dev/stdout > ./tickets_price_`date --iso`.csv"
+  },
+  "author": "",
+  "license": "MIT"
+}
