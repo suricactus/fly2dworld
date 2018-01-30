@@ -10,14 +10,17 @@
     "command-line-usage": "^4.1.0",
     "config": "^1.29.2",
     "csv": "^2.0.0",
+    "fast-csv": "^2.4.1",
     "js-yaml": "^3.10.0",
     "moment": "^2.20.1",
     "pretty-ms": "^3.1.0",
+    "sqlite": "^2.9.1",
     "superagent": "^3.8.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "sqlite3 ./setup/airports_temp.db < ./setup/setup.sql",
     "sof_duration": "node --trace-warnings --experimental-modules script.mjs --from SOF --order duration --departure 30 < ./airports.csv 2>/dev/stdout > ./tickets_duration_`date --iso`.csv",
     "sof_price": "node --trace-warnings --experimental-modules script.mjs --from SOF --order price --departure 30 < ./airports.csv 2>/dev/stdout > ./tickets_price_`date --iso`.csv"
   },

@@ -95,6 +95,8 @@ const parseRawResp = (resp, additional) => {
     const row = { ...additional };
 
     row.airportCodeFrom = d.flyFrom;
+    row.ids = d.id;
+    row.quality = d.quality;
     row.airportCodeTo = d.flyTo;
     row.cityFrom = d.cityFrom;
     row.cityTo = d.cityTo;

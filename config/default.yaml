@@ -18,7 +18,8 @@ adults: 1
 defaultCurrency: 'EUR'
 defaultLimit: 1
 csvHeaders: [
- 'airportCodeFrom',
+  'ids',
+  'airportCodeFrom',
   'airportCodeTo',
   'cityFrom',
   'cityTo',

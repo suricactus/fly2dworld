@@ -22,7 +22,7 @@ const usageDefinitions = [
       { name: 'departure', alias: 'd', type: Number, defaultValue: 0, description: 'Number of days since now to the departure to the foreign airport. Valid ISO date.' },
       { name: 'stay-duration', alias: 's', type: Number, description: 'Number of days to stay before gettings back.' },
       { name: 'flight-tolerance', alias: 't', type: Number, defaultValue: 0, description: 'Number of days after the departure/arrival date to search tickets.' },
-      { name: 'airport-column-name', type: String, defaultValue: 'airport_code',description: 'Airport column name of the incomming CSV file', },
+      { name: 'airport-column-name', type: String, defaultValue: 'iata_code',description: 'Airport column name of the incomming CSV file', },
       { name: 'help', alias: 'h', type: Boolean, description: 'Print this help message' },
     ]
   }
